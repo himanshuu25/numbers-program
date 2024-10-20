@@ -1,0 +1,367 @@
+//.....................SUM TWO NUMBER.................
+
+#include<iostream>
+using namespace std;
+int main(){
+    int a,b;
+    cout<<"enter a number";
+    cin>>a;
+     cout<<"enter a number";
+    cin>>b;
+    cout<<"the sum is "<<a+b;
+}
+
+//...................FIND AREA.........................
+
+#include<iostream>
+using namespace std;
+int main(){
+    int a;
+    cout<<"enter the area";
+    cin>>a;
+    cout<<"the are  is "<<a*a;
+}
+
+//............CHECK PRIME OR NOT.............................
+
+#include<iostream>
+using namespace std;
+int main(){
+    int n,i;
+    cout<<"enter the number";
+    cin>>n;
+    for(i=2;i<n;i++){
+        if(n%i==0){
+            cout<<"no";
+            break;
+        }
+    }
+    if(i==n){
+        cout<<"yes";
+    }
+}
+
+//............... REVERSE THE INTEGER...............................
+
+#include<iostream>
+using namespace std;
+int main(){
+    int a,rev=0;
+    cout<<"enter the number";
+    cin>>a;
+    for(a;a!=0;a=a/10){
+        int ld=a%10;
+        rev=rev*10+ld;
+    }
+    cout<<"reverse is :-"<<rev;
+}
+
+//....................FIBBONACI SERIES............................
+
+#include<iostream>
+using namespace std;
+int main(){
+    int n,d1=0,d2=1,d3;
+    cout<<"enter the number";
+    cin>>n;
+    cout<<d1<<d2;
+    for(int i=2;i<n;i++){
+        d3=d1+d2;
+        cout<<d3;
+        d1=d2;
+        d2=d3;
+    }
+    return 0;
+}
+
+//...................... CHECK PALINDROME......................
+
+#include<iostream>
+using namespace std;
+int main(){
+    int n,original,New=0;
+    cout<<"enter the nuber";
+    cin>>n;
+    original=n;
+    while(n!=0){
+        New=New*10+n%10;
+        n=n/10;
+    }
+    if(original==New){
+        cout<<"number is palindrome ";
+    }
+    else
+    cout<<"number is not palindrome";
+    return 0;
+}
+
+//.......................... MAX AMONG THREE .....................
+
+#include<iostream>
+using namespace std;
+int main(){
+    int a,b,c,max;
+    cout<<"enter three numbers";
+    cin>>a>>b>>c;
+    max=a;
+    if(b>max&&b>c){
+        max=b;
+    }
+    else if(c>max&&c>b){
+        max=c;
+    }
+    cout<<"the greatest among three is "<<max;
+    return 0;
+
+}
+
+//...............................CHECK BINARY OR NOT.....................
+                                                                
+#include<iostream>
+using namespace std;
+int main(){
+     int a, c=0;
+    cout<<"enter the number";
+    cin>>a;
+    while(a!=0){
+        if(a%10!=1 && a%10!=0){
+            c=1;
+            break;
+        }
+        a=a/10;
+    }
+    if(c==1){
+        cout<<"number is not binary";
+    }
+    else
+    cout<<"number is binary";
+    
+return 0;
+}
+
+//................................SWAP................................
+
+#include<iostream>
+using namespace std;
+int main(){
+    int a=90,b=28;
+    cout<<a <<b<<"\n";
+    a=a+b;
+    b=a-b;
+    a=a-b;
+    cout<<a<<b;
+    return 0;
+}
+
+//...............................SWAP......................
+
+#include<iostream>
+using namespace std;
+int main(){
+    int a=90,b=28;
+    cout<<a <<b<<"\n";
+    a=a*b;
+    b=a/b;
+    a=a/b;
+    cout<<a<<b;
+    return 0;
+}
+
+//.........................SWAP.....................
+
+#include<iostream>
+using namespace std;
+int main(){
+    int a=90,b=28,temp;
+    cout<<a <<b<<"\n";
+    temp=a;
+    a=b;
+    b=temp;
+    cout<<a<<b;
+    return 0;
+}
+
+//...................ADDITION WITHOUT + ......................
+
+#include<iostream>
+using namespace std;
+int main(){
+    int a=90,b=28;
+    cout<<a-(-b);
+    
+    return 0;
+}
+
+//...........................FACTORIAL ..................
+
+#include<iostream>
+using namespace std;
+int main(){
+    int n,i,fact=1;
+    cout<<"enter the number";
+    cin>>n;
+    for(i=1;i<=n;i++){
+        fact=fact*i;
+    }
+    cout<<fact;
+    return 0;
+}
+
+//.......................... FACTORIAL USING RECURSION.......................
+
+#include<iostream>
+using namespace std;
+int fact(int n){
+    if(n==0 or n==1)return 1;
+    return n*fact(n-1);
+}
+int main(){
+    int n;
+    cout<<"enter the number";
+    cin>>n;
+    cout<<fact(n);
+    return 0;
+}
+
+//............................MINIMUM AMONG THREE NUMBER.................
+
+#include<iostream>
+using namespace std;
+int main(){
+    int a,b,c,min;
+    cout<<"enter three numbers";
+    cin>>a>>b>>c;
+    min=a;
+    if(b<min&&b<c){
+        min=b;
+    }
+    else if(c<min&&c<b){
+        min=c;
+    }
+    cout<<"the smallest among three is "<<min;
+    return 0;
+
+}
+
+//........................WITHOUT USING POW FUNCTION................
+
+
+#include<iostream>
+using namespace std;
+int POW(int a,int power){
+    if(power==0)return 1;
+    return a*POW(a,power-1);
+}
+int main(){
+    int a,power;
+    cout<<"enter the numbers";
+    cin>>a;
+    cout<<"enter the power";
+   cin>>power;
+   cout<<POW(a,power);
+   return 0;
+}
+
+//......................Square..........................
+
+#include<iostream>
+using namespace std;
+int sq(int n){
+    return n*n;
+}
+int main(){
+    int n;
+    cout<<"enter the number";
+    cin>>n;
+    cout<<sq(n);
+    return 0;
+}
+
+//........................qube.......................
+
+#include<iostream>
+using namespace std;
+int qu(int n){
+    return n*n*n;
+}
+int main(){
+    int n;
+    cout<<"enter the number";
+    cin>>n;
+    cout<<qu(n);
+    return 0;
+}
+
+//*******************************HCM*******************************
+
+#include<iostream>
+using namespace std;
+int main(){
+    int a,b,min;
+    cout<<"enter two numbers";
+    cin>>a>>b;
+    min=a<b?a:b;
+    while(min>1){
+        if(a%min==0&&b%min==0){
+            break;
+        }
+        min--;
+    }
+    cout<<"HCF is :- "<<min;
+    return 0;
+}
+
+//............................................LCM.......................
+
+#include<iostream>
+using namespace std;
+int main(){
+    int a,b,max;
+    cout<<"enter two numbers";
+    cin>>a>>b;
+    max=a>b?a:b;
+    while(max>1){
+        if(max%a==0&&max%b==0){
+            break;
+        }
+        max++;
+    }
+    cout<<"LCM is :- "<<max;
+    return 0;
+}
+
+//.....................HCF RECURSION..................
+
+#include<iostream>
+using namespace std;
+int hcf(int a,int b){
+    if(b==0){
+        return a;
+    }
+    hcf(b,a%b);
+}
+int main(){
+    int a,b;
+    cout<<"enter two numbers";
+    cin>>a>>b;
+    cout<<"HCF is :- "<<hcf(a,b);
+    return 0;
+}
+
+//......................HCF.............................
+
+#include<iostream>
+using namespace std;
+int main(){
+     int a,b;
+    cout<<"enter two numbers";
+    cin>>a>>b;
+    while(b!=0){
+        int temp=a;
+        a=b;
+        b=temp%b;
+        
+    }
+    cout<<a;
+    return 0;
+}
