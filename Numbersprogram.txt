@@ -22,7 +22,7 @@ int main(){
     cout<<"the are  is "<<a*a;
 }
 
-//............CHECK PRIME OR NOT.............................
+//............CHECK PRIME OR NOT.............................IMP
 
 #include<iostream>
 using namespace std;
@@ -56,7 +56,7 @@ int main(){
     cout<<"reverse is :-"<<rev;
 }
 
-//....................FIBBONACI SERIES............................
+//....................FIBBONACI SERIES............................IMP
 
 #include<iostream>
 using namespace std;
@@ -74,7 +74,7 @@ int main(){
     return 0;
 }
 
-//...................... CHECK PALINDROME......................
+//...................... CHECK PALINDROME......................IMP
 
 #include<iostream>
 using namespace std;
@@ -115,7 +115,7 @@ int main(){
 
 }
 
-//...............................CHECK BINARY OR NOT.....................
+//...............................CHECK BINARY OR NOT.....................IMP
                                                                 
 #include<iostream>
 using namespace std;
@@ -181,7 +181,7 @@ int main(){
     return 0;
 }
 
-//...................ADDITION WITHOUT + ......................
+//...................ADDITION WITHOUT + ......................IMP
 
 #include<iostream>
 using namespace std;
@@ -243,7 +243,7 @@ int main(){
 
 }
 
-//........................WITHOUT USING POW FUNCTION................
+//........................WITHOUT USING POW FUNCTION................IMP
 
 
 #include<iostream>
@@ -292,7 +292,7 @@ int main(){
     return 0;
 }
 
-//*******************************HCM*******************************
+//*******************************HCM*******************************IMP
 
 #include<iostream>
 using namespace std;
@@ -311,7 +311,7 @@ int main(){
     return 0;
 }
 
-//............................................LCM.......................
+//............................................LCM.......................IMP
 
 #include<iostream>
 using namespace std;
@@ -330,7 +330,7 @@ int main(){
     return 0;
 }
 
-//.....................HCF RECURSION..................
+//.....................HCF RECURSION..................IMP
 
 #include<iostream>
 using namespace std;
@@ -348,7 +348,7 @@ int main(){
     return 0;
 }
 
-//......................HCF.............................
+//......................HCF.............................IMP
 
 #include<iostream>
 using namespace std;
